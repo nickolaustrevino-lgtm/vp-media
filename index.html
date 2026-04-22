@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nickolaus Trevino — VP Marketing, Growth & Unified Investment</title>
+<meta name="description" content="Senior marketing and growth leader. 12+ years in cross-channel investment strategy, MMM, incrementality testing, and AI-augmented measurement infrastructure." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fafaf7;
+    --bg-alt: #f3f2ed;
+    --ink: #0f1419;
+    --ink-soft: #3a4047;
+    --ink-muted: #6b7280;
+    --line: #e5e3dc;
+    --accent: #1a2a4a;
+    --accent-soft: #e8eaf2;
+    --amber: #b8860b;
+    --card: #ffffff;
+    --shadow-sm: 0 1px 2px rgba(15, 20, 25, 0.04);
+    --shadow-md: 0 4px 16px rgba(15, 20, 25, 0.06);
+    --shadow-lg: 0 12px 40px rgba(15, 20, 25, 0.08);
+    --radius: 12px;
+    --radius-lg: 20px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection { background: var(--accent); color: #fff; }
+
+  a { color: var(--accent); text-decoration: none; transition: opacity 0.2s ease; }
+  a:hover { opacity: 0.7; }
+
+  /* === Sticky Nav === */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 250, 247, 0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  .nav-brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-soft);
+  }
+  .nav-links a {
+    color: var(--ink-soft);
+    position: relative;
+  }
+  .nav-links a:hover { color: var(--ink); opacity: 1; }
+  .nav-cta {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background: var(--ink);
+    color: #fff !important;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+  }
+  .nav-cta:hover { background: var(--accent); opacity: 1; }
+  @media (max-width: 720px) {
+    .nav-links { display: none; }
+    .nav-inner { padding: 14px 24px; }
+  }
+
+  /* === Layout === */
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  @media (max-width: 720px) {
+    .container { padding: 0 24px; }
+  }
+
+  /* === Hero === */
+  .hero {
+    padding: 80px 0 56px;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero-content { min-width: 0; }
+  .hero-portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-lg);
+    background: var(--bg-alt);
+  }
+  .hero-portrait::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(15, 20, 25, 0.08);
+    pointer-events: none;
+  }
+  .hero-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+  }
+  @media (max-width: 820px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .hero-portrait {
+      width: 128px;
+      height: 128px;
+      order: -1;
+    }
+  }
+  .hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 20px;
+  }
+  .hero-kicker::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #16a34a;
+    box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.15);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.15); }
+    50% { box-shadow: 0 0 0 8px rgba(22, 163, 74, 0.05); }
+  }
+  .hero h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 20px;
+    color: var(--ink);
+  }
+  .hero-tagline {
+    font-size: clamp(18px, 2.2vw, 22px);
+    font-weight: 400;
+    color: var(--ink-soft);
+    max-width: 720px;
+    margin-bottom: 32px;
+    line-height: 1.5;
+  }
+  .hero-tagline strong { color: var(--ink); font-weight: 600; }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 28px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 32px;
+  }
+  .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-meta svg { opacity: 0.6; flex-shrink: 0; }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-primary {
+    background: var(--ink);
+    color: #fff !important;
+  }
+  .btn-primary:hover { background: var(--accent); opacity: 1; }
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink) !important;
+    border-color: var(--line);
+  }
+  .btn-secondary:hover { background: var(--bg-alt); border-color: var(--ink-muted); opacity: 1; }
+
+  /* === Section === */
+  section { padding: 72px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+  .section-intro {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 720px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  /* === Summary === */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 820px) {
+    .summary-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+  .summary-body p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+  .summary-body p strong { color: var(--ink); font-weight: 600; }
+  .summary-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .stat {
+    background: var(--card);
+    padding: 24px 20px;
+  }
+  .stat-value {
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* === Spotlight Cards (Walmart + MMM) === */
+  .spotlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 820px) {
+    .spotlights { grid-template-columns: 1fr; }
+  }
+  .spotlight {
+    display: block;
+    position: relative;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    color: var(--ink) !important;
+  }
+  .spotlight:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--ink-muted);
+    opacity: 1;
+  }
+  .spotlight::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--accent);
+  }
+  .spotlight-walmart::before { background: linear-gradient(90deg, #0071ce 0%, #ffc220 100%); }
+  .spotlight-mmm::before { background: linear-gradient(90deg, #1a2a4a 0%, #b8860b 100%); }
+  .spotlight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .spotlight-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .spotlight-tag-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--amber);
+  }
+  .spotlight-live {
+    background: #16a34a;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  .spotlight-arrow {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .spotlight:hover .spotlight-arrow {
+    background: var(--ink);
+    color: #fff;
+    transform: rotate(-45deg);
+  }
+  .spotlight-arrow svg { transition: transform 0.3s ease; }
+  .spotlight h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin-bottom: 12px;
+  }
+  .spotlight-desc {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .spotlight-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    background: var(--bg-alt);
+    color: var(--ink-soft);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* === Experience === */
+  .experience-list { display: flex; flex-direction: column; gap: 0; }
+  .role {
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+  }
+  .role:first-child { padding-top: 0; }
+  .role:last-child { border-bottom: none; padding-bottom: 0; }
+  @media (max-width: 820px) {
+    .role { grid-template-columns: 1fr; gap: 16px; }
+  }
+  .role-dates {
+    font-size: 13px;
+    color: var(--ink-muted);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding-top: 4px;
+  }
+  .role-dates-current {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #16a34a;
+    font-weight: 600;
+  }
+  .role-dates-current::before {
+    content: '';
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #16a34a;
+  }
+  .role h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+    color: var(--ink);
+  }
+  .role-company {
+    font-size: 14px;
+    color: var(--ink-soft);
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+  .role-company .company-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+  }
+  .role-intro {
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+    line-height: 1.65;
+  }
+  .role-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .role ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .role ul li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .role ul li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 10px;
+    width: 12px; height: 1px;
+    background: var(--ink-muted);
+  }
+  .role ul li strong { color: var(--ink); font-weight: 600; }
+
+  /* === Clients === */
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  @media (max-width: 820px) {
+    .clients-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 520px) {
+    .clients-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .client {
+    background: var(--card);
+    padding: 28px 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+    transition: background 0.2s ease;
+    line-height: 1.2;
+  }
+  .client:hover { background: var(--bg-alt); }
+
+  /* === Competencies / Tech === */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  @media (max-width: 820px) {
+    .two-col { grid-template-columns: 1fr; gap: 32px; }
+  }
+  .comp-group { margin-bottom: 24px; }
+  .comp-group:last-child { margin-bottom: 0; }
+  .comp-group h4 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 12px;
+  }
+  .comp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .comp-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  .comp-tag:hover { border-color: var(--ink); color: var(--ink); }
+
+  /* === Writing === */
+  .writing-list { display: flex; flex-direction: column; gap: 4px; }
+  .writing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink) !important;
+  }
+  .writing-item:last-child { border-bottom: none; }
+  .writing-item:hover { opacity: 1; }
+  .writing-item:hover h4 { color: var(--accent); }
+  .writing-content { flex: 1; }
+  .writing-item h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+    transition: color 0.2s ease;
+  }
+  .writing-item p {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .writing-arrow {
+    flex-shrink: 0;
+    color: var(--ink-muted);
+    transition: transform 0.2s ease;
+    padding-top: 4px;
+  }
+  .writing-item:hover .writing-arrow {
+    transform: translate(3px, -3px);
+    color: var(--ink);
+  }
+
+  /* === CTA Footer === */
+  .cta-section {
+    background: var(--ink);
+    color: #fff;
+    margin: 0 -40px;
+    padding: 80px 40px;
+    border-radius: var(--radius-lg);
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .cta-section .section-label { color: rgba(255,255,255,0.6); }
+  .cta-section h2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 20px;
+    max-width: 720px;
+  }
+  .cta-section p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 32px;
+    max-width: 640px;
+    line-height: 1.6;
+  }
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .cta-buttons .btn-primary {
+    background: #fff;
+    color: var(--ink) !important;
+  }
+  .cta-buttons .btn-primary:hover { background: #f0f0ea; }
+  .cta-buttons .btn-secondary {
+    color: #fff !important;
+    border-color: rgba(255,255,255,0.3);
+  }
+  .cta-buttons .btn-secondary:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.6);
+  }
+
+  /* === Footer === */
+  footer {
+    padding: 40px 0 60px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-muted);
+  }
+  footer a { color: var(--ink-muted); }
+
+  /* === Reveal Animation === */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* === Print Styles === */
+  @media print {
+    .nav, .cta-section, .hero-actions, footer, .writing-arrow, .spotlight-arrow { display: none !important; }
+    body { background: #fff; font-size: 11px; }
+    .container { max-width: 100%; padding: 0; }
+    section { padding: 24px 0; page-break-inside: avoid; border-bottom: 1px solid #ccc; }
+    .hero { padding: 0 0 20px; }
+    .spotlight, .stat, .client, .comp-tag { box-shadow: none !important; border: 1px solid #ccc !important; }
+    .role { padding: 16px 0; page-break-inside: avoid; }
+    a { color: #000 !important; text-decoration: none; }
+    .hero h1 { font-size: 28px; }
+    .section-title { font-size: 20px; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">Nickolaus Trevino</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="/cdn-cgi/l/email-protection#5b3532383034373a2e28752f293e2d3235341b3c363a32377538343664282e39313e382f660d0b7e696b163a29303e2f32353c7e696b142b2b34292f2e35322f22" class="nav-cta">Get in touch</a>
+  </div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-kicker">Open to VP-level roles</div>
+        <h1>Cross-channel investment strategy, engineered for revenue.</h1>
+        <p class="hero-tagline">
+          Senior marketing and growth leader with <strong>12+ years</strong> owning $100M+ in annual working media. I build the measurement infrastructure, operating models, and <strong>AI-augmented systems</strong> that answer the only question clients actually ask: <em>why is my money working — or not working.</em>
+        </p>
+      </div>
+      <div class="hero-portrait">
+        <img src="data:image/jpeg;base64,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" alt="Nickolaus Trevino" />
+      </div>
+    </div>
+    <div class="hero-meta" style="margin-top: 32px;">
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        New York, NY · Remote · GMT-adjacent
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (410) 419-4637
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="/cdn-cgi/l/email-protection#9cf2f5fff7f3f0fde9efb2e8eef9eaf5f2f3dcfbf1fdf5f0b2fff3f1"><span class="__cf_email__" data-cfemail="4b2522282024272a3e38653f392e3d2225240b2c262a222765282426">[email&#160;protected]</span></a>
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+        <a href="https://linkedin.com/in/nickolaustrevino" target="_blank" rel="noopener">linkedin.com/in/nickolaustrevino</a>
+      </span>
+    </div>
+    <div class="hero-actions" style="margin-top: 8px;">
+      <a href="#work" class="btn btn-primary">
+        See my work
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button onclick="window.print()" class="btn btn-secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Download as PDF
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ====== SUMMARY ====== -->
+<section class="reveal">
+  <div class="container">
+    <div class="section-label">About</div>
+    <h2 class="section-title">The integrating layer above channel specialists — where media, measurement, and commercial infrastructure meet.</h2>
+    <div class="summary-grid">
+      <div class="summary-body">
+        <p>I own <strong>cross-channel budget strategy</strong> across digital, retail, social, traditional, and print. Full accountability for $100M+ in annual media across global accounts spanning 15+ markets.</p>
+        <p>I future-proof client success by focusing on the <strong>operational and technical integration layers</strong> needed for accurate measurement infrastructure — MMM, incrementality testing, Brand Lift. Not last-click reporting. Causation-based investment recommendations that secure multi-million-dollar budget expansions.</p>
+        <p>Track record of <strong>building operating models from scratch</strong> in environments where none existed.</p>
+      </div>
+      <div class="summary-stats">
+        <div class="stat">
+          <div class="stat-value">$100M+</div>
+          <div class="stat-label">Annual Media Managed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">12+</div>
+          <div class="stat-label">Years in Market</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">15+</div>
+          <div class="stat-label">Global Markets</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">25+</div>
+          <div class="stat-label">Channel Partners</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SPOTLIGHT: WORK SAMPLES ====== -->
+<section id="work" class="reveal">
+  <div class="container">
+    <div class="section-label">Featured Work</div>
+    <h2 class="section-title">Two pieces of proof, not a portfolio.</h2>
+    <p class="section-intro">One is a live calculator built to demonstrate MMM thinking in a regulated, high-CAC vertical. The other is a full case study on rethinking retail-gaming culture through community infrastructure. Both reflect how I actually work.</p>
+    <div class="spotlights">
+
+      <!-- MMM Calculator -->
+      <a href="https://nickolaustrevino-lgtm.github.io/fanatics-mmm-calculator/" target="_blank" rel="noopener" class="spotlight spotlight-mmm">
+        <div class="spotlight-header">
+          <span class="spotlight-tag"><span class="spotlight-tag-dot spotlight-live"></span>Live Interactive Tool</span>
+          <span class="spotlight-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </span>
+        </div>
+        <h3>Fanatics Marketing Mix Modeling Calculator</h3>
+        <p class="spotlight-desc">A working MMM calculator modeling channel-level contribution, diminishing returns, and budget reallocation scenarios for a sports betting / retail commerce use case. Built to demonstrate how measurement infrastructure should actually surface for executives — not as a dashboard, as a decision tool.</p>
+        <div class="spotlight-meta">
+          <span class="chip">MMM</span>
+          <span class="chip">Incrementality</span>
+          <span class="chip">AI-Augmented</span>
+          <span class="chip">Regulated Vertical</span>
+        </div>
+      </a>
+
+      <!-- Walmart Case Study -->
+      <a href="https://nickolaustrevino-lgtm.github.io/walmart-case-study/" target="_blank" rel="noopener" class="spotlight spotlight-walmart">
+        <div class="spotlight-header">
+          <span class="spotlight-tag"><span class="spotlight-tag-dot"></span>Case Study</span>
+          <span class="spotlight-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </span>
+        </div>
+        <h3>Walmart × Gaming Culture: A Discord-First Community Activation</h3>
+        <p class="spotlight-desc">Bridging retail and gaming culture through a community-first activation model. A full case study on how to build brand permission in a subculture that rejects traditional paid media — and how to measure what community infrastructure actually returns.</p>
+        <div class="spotlight-meta">
+          <span class="chip">Retail × Gaming</span>
+          <span class="chip">Community</span>
+          <span class="chip">Brand Strategy</span>
+          <span class="chip">Discord</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====== CLIENTS ====== -->
+<section class="reveal">
+  <div class="container">
+    <div class="section-label">Clients</div>
+    <h2 class="section-title">Twelve years of revenue accountability.</h2>
+    <p class="section-intro">Across gaming, entertainment, retail, healthcare, B2B, and ecommerce — in regulated and performance-accountable environments where the numbers have to be real.</p>
+    <div class="clients-grid">
+      <div class="client">Epic Games</div>
+      <div class="client">Microsoft</div>
+      <div class="client">Warner Bros.</div>
+      <div class="client">Walmart</div>
+      <div class="client">Amazon</div>
+      <div class="client">2K Games</div>
+      <div class="client">Razer</div>
+      <div class="client">Turtle Beach</div>
+      <div class="client">Department for Education</div>
+      <div class="client">RiverSpring Living</div>
+      <div class="client">Wonderlic</div>
+      <div class="client">+ more</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== EXPERIENCE ====== -->
+<section id="experience" class="reveal">
+  <div class="container">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title">Where the work was done.</h2>
+
+    <div class="experience-list">
+
+      <!-- MOONROCK -->
+      <div class="role">
+        <div class="role-dates">Mar 2024 — Jan 2026</div>
+        <div>
+          <h3>Vice President, Media Strategy</h3>
+          <div class="role-company">MOONROCK <span class="company-badge">Inc. 5000 #1 Marketing Agency</span></div>
+          <p class="role-intro">Owned cross-channel investment strategy for $100M+ in annual working media across 25+ channel partners, DSPs, SSPs, ad networks, and measurement vendors. Served as the integrating layer above channel specialists for global accounts across gaming, entertainment, retail, and technology in 10+ markets.</p>
+
+          <div class="role-section-title">Cross-Channel Budget Governance & Reallocation</div>
+          <ul>
+            <li>Designed a <strong>cross-channel operating model</strong> that replaced static quarterly plans with weekly budget arbitration across Search, Social, Programmatic, CTV, and Audio based on real-time demand signals. Applied to Epic Games' Unreal Engine: <strong>15% over-delivery on impressions, 50% on video views, 55% on clicks</strong> — on flat YoY spend.</li>
+            <li>Built measurement infrastructure triangulating <strong>MMM (Robin/Meta), geo-holdout incrementality testing, and Brand Lift</strong> to answer cross-channel attribution questions for C-suite stakeholders. Replaced last-click reporting with causation-based investment recommendations that secured multi-million-dollar budget expansions.</li>
+            <li>Restructured fragmented channel operations under centralized strategic control — <strong>reducing overhead 50% while scaling output</strong>. Built the governance layer that did not previously exist.</li>
+          </ul>
+
+          <div class="role-section-title">Client Relationship & Strategic Storytelling</div>
+          <ul>
+            <li>Presented cross-channel performance narratives to C-suite stakeholders on recurring cadence, translating messy multi-platform data into clear budget recommendations and reallocation rationale.</li>
+            <li>Led the <strong>Rocket League Championship Series (RLCS) 2026</strong> investment strategy across four markets (France, Brazil, UK, Saudi Arabia), building coherence across fragmented regional activations and determining what should be governed globally vs. executed locally.</li>
+            <li>Owned the <strong>Fab Marketplace GTM</strong> investment strategy across Search, Social, and Programmatic — shifting the client's success metric from vanity (sign-ups) to revenue (Creator LTV) and delivering <strong>$1M in measurable GMV</strong>.</li>
+          </ul>
+
+          <div class="role-section-title">Team Leadership</div>
+          <ul>
+            <li>Led 12 channel specialists and analysts, structuring the team so channel expertise reported up into unified investment strategy rather than operating in silos.</li>
+            <li>Partnered cross-functionally with Creative, Analytics, CRM, Legal, and Product to deliver integrated execution across 100+ initiatives in 10 global markets.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INFINITE REALITY -->
+      <div class="role">
+        <div class="role-dates">Oct 2020 — Feb 2024</div>
+        <div>
+          <h3>Media Director</h3>
+          <div class="role-company">INFINITE REALITY / REKTGLOBAL <span class="company-badge">Acquired · $470M</span></div>
+          <p class="role-intro">Directed cross-channel investment strategy across 20+ concurrent vendor and platform relationships for enterprise accounts (Epic Games, Walmart) in a hyper-growth environment where the operating model had to be built from scratch.</p>
+          <ul>
+            <li>Managed <strong>$30M+ annual budget</strong> across Search, Social, Programmatic, CTV, Audio, Affiliate, and Influencer — coordinating execution across 15+ buying platforms simultaneously and arbitrating allocation based on performance signals.</li>
+            <li>Built, mentored, and scaled team from <strong>4 to 12 channel specialists</strong> across time zones; structured the team so each discipline connected into a unified investment view rather than reporting in isolation.</li>
+            <li>Expanded the Epic Games relationship over 8 continuous years (<strong>$1.5M to $7M annually</strong>) by serving as the single point of accountability for cross-channel investment performance across Fortnite, Unreal Engine, and Rocket League.</li>
+            <li>Built BI dashboards capturing <strong>40K+ data points</strong>, translating granular channel metrics into C-suite-ready performance narratives that drove budget decisions.</li>
+            <li>Led a consulting engagement for <strong>Warner Bros. Games</strong> to diagnose fragmented investment planning and build a four-month roadmap unifying media, creative, and analytics under one governance structure.</li>
+            <li>Secured a <strong>$400K/month global client</strong> through new business development — end-to-end pitch-to-close ownership.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FEARLESS AMD -->
+      <div class="role">
+        <div class="role-dates">Oct 2019 — Oct 2020</div>
+        <div>
+          <h3>Associate Media Director</h3>
+          <div class="role-company">FEARLESS MEDIA</div>
+          <ul>
+            <li>Architected the <strong>$2.5M Amazon Prime × Rocket League</strong> cross-channel strategy synchronizing Paid Media, CTV, Affiliate, and Influencer to achieve the franchise's highest concurrent viewership.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FEARLESS MS -->
+      <div class="role">
+        <div class="role-dates">Dec 2017 — Oct 2019</div>
+        <div>
+          <h3>Media Supervisor</h3>
+          <div class="role-company">FEARLESS MEDIA</div>
+          <ul>
+            <li>Led cross-platform strategy for <strong>Fortnite's 2017 launch</strong>, coordinating Search, Social, OLV, and Programmatic to exceed <strong>100M+ total views</strong>.</li>
+            <li>Standardized buying, reporting, and measurement processes across the agency, creating the operational foundation for cross-channel governance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FEARLESS SMM -->
+      <div class="role">
+        <div class="role-dates">Jun 2015 — Dec 2017</div>
+        <div>
+          <h3>Social Media Manager</h3>
+          <div class="role-company">FEARLESS MEDIA</div>
+          <ul>
+            <li>Managed paid social investment across <strong>$200K–$20M annual budgets</strong> for entertainment brands across Meta, Snapchat (early beta partner), and emerging platforms.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FLYING POINT -->
+      <div class="role">
+        <div class="role-dates">Mar 2014 — Jul 2015</div>
+        <div>
+          <h3>Social Media Manager</h3>
+          <div class="role-company">FLYING POINT DIGITAL</div>
+          <ul>
+            <li>Led paid social for eCommerce, CPG, and Fortune 500 clients.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====== COMPETENCIES + TECH ====== -->
+<section class="reveal">
+  <div class="container">
+    <div class="section-label">Capabilities</div>
+    <h2 class="section-title">What I actually do all day.</h2>
+    <div class="two-col">
+      <div>
+        <div class="comp-group">
+          <h4>Strategy & Ownership</h4>
+          <div class="comp-tags">
+            <span class="comp-tag">Cross-Channel Budget Strategy</span>
+            <span class="comp-tag">Global vs. Regional Investment Architecture</span>
+            <span class="comp-tag">Operating Model Design</span>
+            <span class="comp-tag">Senior Client Relationship Ownership</span>
+            <span class="comp-tag">P&L Fluency</span>
+            <span class="comp-tag">Team Leadership</span>
+          </div>
+        </div>
+        <div class="comp-group">
+          <h4>Measurement & Causation</h4>
+          <div class="comp-tags">
+            <span class="comp-tag">Marketing Mix Modeling (MMM)</span>
+            <span class="comp-tag">Incrementality Testing</span>
+            <span class="comp-tag">Brand Lift</span>
+            <span class="comp-tag">Geo-Holdout Design</span>
+            <span class="comp-tag">LTV / CAC Modeling</span>
+            <span class="comp-tag">Causation-Proof Reporting</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="comp-group">
+          <h4>Investment Platforms</h4>
+          <div class="comp-tags">
+            <span class="comp-tag">Meta</span>
+            <span class="comp-tag">Google Ads</span>
+            <span class="comp-tag">DV360</span>
+            <span class="comp-tag">The Trade Desk</span>
+            <span class="comp-tag">TikTok</span>
+            <span class="comp-tag">YouTube</span>
+            <span class="comp-tag">Snapchat</span>
+            <span class="comp-tag">Amazon DSP</span>
+          </div>
+        </div>
+        <div class="comp-group">
+          <h4>Data & AI Stack</h4>
+          <div class="comp-tags">
+            <span class="comp-tag">GA4</span>
+            <span class="comp-tag">Tableau</span>
+            <span class="comp-tag">Looker Studio</span>
+            <span class="comp-tag">Snowflake</span>
+            <span class="comp-tag">Robin (Meta Open-Source MMM)</span>
+            <span class="comp-tag">Codex</span>
+            <span class="comp-tag">Perplexity Enterprise + Spaces</span>
+            <span class="comp-tag">Claude</span>
+            <span class="comp-tag">Genspark</span>
+            <span class="comp-tag">OpenAI API / Custom Bots</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== WRITING ====== -->
+<section id="writing" class="reveal">
+  <div class="container">
+    <div class="section-label">Writing</div>
+    <h2 class="section-title">Thinking out loud — in public.</h2>
+    <p class="section-intro">Published on <a href="https://goodversusgreat.substack.com/" target="_blank" rel="noopener">Good Versus Great</a>. Frameworks on measurement, AI, and the changing operating model of marketing.</p>
+    <div class="writing-list">
+      <a class="writing-item" href="https://goodversusgreat.substack.com/p/the-advertiser-has-been-demoted-your" target="_blank" rel="noopener">
+        <div class="writing-content">
+          <h4>The Advertiser Has Been Demoted</h4>
+          <p>The job is now systems architecture and signal engineering. A reframe of what the modern marketing leader actually does.</p>
+        </div>
+        <svg class="writing-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+      <a class="writing-item" href="https://goodversusgreat.substack.com/p/from-clicks-to-citations-redesigning" target="_blank" rel="noopener">
+        <div class="writing-content">
+          <h4>From Clicks to Citations</h4>
+          <p>A measurement framework for AI search introducing four KPI pillars to replace traffic-volume metrics with citation equity.</p>
+        </div>
+        <svg class="writing-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+      <a class="writing-item" href="https://goodversusgreat.substack.com/" target="_blank" rel="noopener">
+        <div class="writing-content">
+          <h4>I Built a Discord Bot in 10 Days</h4>
+          <p>Build log documenting Queue Me, a community tool using the OpenAI API. Proof of AI-augmented execution at the individual-contributor level.</p>
+        </div>
+        <svg class="writing-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== EDUCATION ====== -->
+<section class="reveal">
+  <div class="container">
+    <div class="section-label">Education</div>
+    <h2 class="section-title">Foundations.</h2>
+    <div class="two-col">
+      <div>
+        <h3 style="font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500; margin-bottom: 6px;">University of Richmond</h3>
+        <p style="color: var(--ink-soft);">B.S. Psychology · Minor: Rhetoric &amp; Communications</p>
+      </div>
+      <div>
+        <h3 style="font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500; margin-bottom: 6px;">Institute of Educational Sciences</h3>
+        <p style="color: var(--ink-soft);">International Studies · Milan, Italy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CTA ====== -->
+<section id="contact" class="reveal">
+  <div class="container">
+    <div class="cta-section">
+      <div class="section-label">Get in touch</div>
+      <h2>If you're hiring VP-level marketing leadership and you've read this far — we should already be talking.</h2>
+      <p>Open to <strong style="color:#fff">VP Marketing, VP Growth, or VP Paid Media</strong> roles in iGaming, AdTech, MarTech, or regulated verticals. Remote-first or GMT-adjacent. Serious inquiries only.</p>
+      <div class="cta-buttons">
+        <a href="/cdn-cgi/l/email-protection#026c6b61696d6e6377712c767067746b6c6d42656f636b6e2c616d6f3d717760686761763f54522730324f63706967766b6c652730324d72726d7076776c6b767b" class="btn btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email me directly
+        </a>
+        <a href="https://linkedin.com/in/nickolaustrevino" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+          Connect on LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="container">
+    © 2026 Nickolaus Trevino · Built as a web app on purpose · <a href="javascript:window.print()">Print version</a>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Intersection observer for reveal animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Smooth scroll offset for sticky nav
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 70;
+        window.scrollTo({
+          top: target.getBoundingClientRect().top + window.pageYOffset - offset,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
