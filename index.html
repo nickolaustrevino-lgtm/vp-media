@@ -62,11 +62,12 @@
     max-width: 1040px;
     margin: 0 auto;
     padding: 14px 40px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 24px;
   }
+  .nav-inner .nav-cta { justify-self: end; }
   .nav-brand {
     font-family: 'Fraunces', serif;
     font-weight: 600;
@@ -693,6 +694,34 @@
     background: rgba(255,255,255,0.08);
     border-color: rgba(255,255,255,0.6);
   }
+  .cta-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+  }
+  .cta-contact-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -0.005em;
+  }
+  .cta-contact-row svg {
+    opacity: 0.7;
+    flex-shrink: 0;
+  }
+  .cta-contact .btn-secondary {
+    color: #fff !important;
+    border-color: rgba(255,255,255,0.3);
+  }
+  .cta-contact .btn-secondary:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.6);
+    opacity: 1;
+  }
 
   /* === Footer === */
   footer {
@@ -740,9 +769,8 @@
       <a href="#work">Work</a>
       <a href="#experience">Experience</a>
       <a href="#writing">Writing</a>
-      <a href="#contact">Contact</a>
     </div>
-    <a href="/cdn-cgi/l/email-protection#afc1c6ccc4c0c3cedadc81dbddcad9c6c1c0efc8c2cec6c381ccc0c290dcdacdc5caccdb92f9ff8a9d9fe2ceddc4cadbc6c1c88a9d9fe0dfdfc0dddbdac1c6dbd6" class="nav-cta">Get in touch</a>
+    <a href="https://linkedin.com/in/nickolaustrevino" target="_blank" rel="noopener" class="nav-cta">Connect</a>
   </div>
 </nav>
 
@@ -772,7 +800,7 @@
       </span>
       <span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        <a href="/cdn-cgi/l/email-protection#a9c7c0cac2c6c5c8dcda87dddbccdfc0c7c6e9cec4c8c0c587cac6c4"><span class="__cf_email__" data-cfemail="701e19131b1f1c1105035e04021506191e1f30171d11191c5e131f1d">[email&#160;protected]</span></a>
+        <span class="email-addr" data-user="nickolaus.trevino" data-domain="gmail.com">nickolaus.trevino<span aria-hidden="true">&#64;</span>gmail.com</span>
       </span>
       <span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
@@ -1127,11 +1155,7 @@
       <h2>If you're hiring VP-level marketing leadership and you've read this far — we should already be talking.</h2>
       <p>Open to <strong style="color:#fff">VP Marketing, VP Growth, or VP Paid Media</strong> roles in iGaming, AdTech, MarTech, or regulated verticals. Remote-first or GMT-adjacent. Serious inquiries only.</p>
       <div class="cta-buttons">
-        <a href="/cdn-cgi/l/email-protection#f59b9c969e9a99948086db818790839c9b9ab59298949c99db969a98ca8680979f909681c8a3a5d0c7c5b894879e90819c9b92d0c7c5ba85859a8781809b9c818c" class="btn btn-primary">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Email me directly
-        </a>
-        <a href="https://linkedin.com/in/nickolaustrevino" target="_blank" rel="noopener" class="btn btn-secondary">
+        <a href="https://linkedin.com/in/nickolaustrevino" target="_blank" rel="noopener" class="btn btn-primary">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
           Connect on LinkedIn
         </a>
@@ -1147,7 +1171,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Intersection observer for reveal animation
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -1175,31 +1199,15 @@
     });
   });
 
-  // Email link fallback: if mailto: doesn't trigger a handler within 500ms,
-  // open Gmail's compose window in a new tab. This handles users who don't have
-  // a default desktop email client configured (very common on modern machines).
-  const EMAIL = 'nickolaus.trevino@gmail.com';
-  const SUBJECT = 'VP Marketing Opportunity';
-  const GMAIL_COMPOSE = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL)}&su=${encodeURIComponent(SUBJECT)}`;
-
-  document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-      // Let the native mailto: try first
-      const start = Date.now();
-      let triggered = false;
-
-      // If the window loses focus within 500ms, a mail client opened — success
-      const onBlur = () => { triggered = true; };
-      window.addEventListener('blur', onBlur, { once: true });
-
-      // After 500ms, if nothing happened, open Gmail compose as fallback
-      setTimeout(() => {
-        window.removeEventListener('blur', onBlur);
-        if (!triggered && document.hasFocus() && (Date.now() - start) < 1500) {
-          window.open(GMAIL_COMPOSE, '_blank', 'noopener');
-        }
-      }, 500);
-    });
+  // Email address reassembly — bypasses Cloudflare's email obfuscation.
+  // Emails are assembled from data attributes at runtime, which Cloudflare's
+  // regex scanner doesn't process, so the address displays as intended.
+  document.querySelectorAll('.email-addr').forEach(el => {
+    const user = el.getAttribute('data-user');
+    const domain = el.getAttribute('data-domain');
+    if (user && domain) {
+      el.textContent = user + '@' + domain;
+    }
   });
 </script>
 
