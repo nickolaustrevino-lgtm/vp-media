@@ -340,11 +340,8 @@
   /* === Spotlight Cards (Featured Work) === */
   .spotlights {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
-  @media (max-width: 1020px) {
-    .spotlights { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 720px) {
     .spotlights { grid-template-columns: 1fr; }
@@ -861,27 +858,9 @@
 <section id="work" class="reveal">
   <div class="container">
     <div class="section-label">Featured Work</div>
-    <h2 class="section-title">Three pieces of proof, not a portfolio.</h2>
-    <p class="section-intro">A live calculator demonstrating MMM thinking in a regulated, high-CAC vertical. A privacy-first measurement system built from the ground up for a global Epic Games launch. And a full case study on rethinking retail-gaming culture through community infrastructure. Each one reflects how I actually work — measurement, decision logic, and operating systems that connect media to revenue.</p>
+    <h2 class="section-title">Two pieces of proof, not a portfolio.</h2>
+    <p class="section-intro">A privacy-first measurement system built from the ground up for a global Epic Games launch. And a full case study on rethinking retail-gaming culture through community infrastructure. Both reflect how I actually work — measurement, decision logic, and operating systems that connect media to revenue.</p>
     <div class="spotlights">
-
-      <!-- MMM Calculator -->
-      <a href="https://nickolaustrevino-lgtm.github.io/fanatics-mmm-calculator/" target="_blank" rel="noopener" class="spotlight spotlight-mmm">
-        <div class="spotlight-header">
-          <span class="spotlight-tag"><span class="spotlight-tag-dot spotlight-live"></span>Live Interactive Tool</span>
-          <span class="spotlight-arrow">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </span>
-        </div>
-        <h3>Fanatics Marketing Mix Modeling Calculator</h3>
-        <p class="spotlight-desc">A working MMM calculator modeling channel-level contribution, diminishing returns, and budget reallocation scenarios for a sports betting / retail commerce use case. Built to demonstrate how measurement infrastructure should actually surface for executives — not as a dashboard, as a decision tool.</p>
-        <div class="spotlight-meta">
-          <span class="chip">MMM</span>
-          <span class="chip">Incrementality</span>
-          <span class="chip">AI-Augmented</span>
-          <span class="chip">Regulated Vertical</span>
-        </div>
-      </a>
 
       <!-- Fab Marketplace Case Study -->
       <a href="https://nickolaustrevino-lgtm.github.io/fab-marketplace-case-study/" target="_blank" rel="noopener" class="spotlight spotlight-fab">
